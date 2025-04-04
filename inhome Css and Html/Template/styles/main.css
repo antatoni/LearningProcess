@@ -1,0 +1,122 @@
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+  margin: 30px;
+  background-color: #f5f5f5;
+}
+
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #e0e0e0;
+}
+
+h1 {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  display: block;
+  margin-top: 5px;
+  opacity: 50%;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+
+}
+
+#main-info {
+  text-align: center;
+  border-bottom: white solid;
+}
+
+#label {
+  background-color: darkseagreen;
+  color: white;
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#main-info a {
+  text-decoration: none;
+  color: rgb(13, 137, 239);
+  text-align: center;
+  font-size: 18px;
+}
+
+
+#details {
+  text-align: center;
+  border-bottom: white solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  gap: 6px;
+  padding-bottom: 10px;
+}
+
+#location,
+#mail,
+#joined {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* #location {
+  margin-top: 10px;
+} */
+
+#location p,
+#mail p,
+#joined p {
+  padding: 3px;
+  margin: 3px;
+}
+
+#mail a {
+  text-decoration: none;
+  color: rgb(13, 137, 239);
+}
+
+#git-info {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.followers,
+.starred,
+.following {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  opacity: 50%;
+}
+
+
+.followers span,
+.starred span,
+.following span {
+  color: rgb(12, 105, 204);
+  font-weight: bold;
+  font-size: 44px;
+}
