@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <form>
+                <input type="text" id="inputTab">
+                <input type="datetime-local" id="inputDate">
+                <button id="AddTaskButton">Add task</button>
+            </form>
+        </header>
+        <br>
+        <h1>Todo list:</h1>
+        <hr>
+        <section id="todos">
+
+            <section id="notDone" class="taskContainer">
+                <h3>Uncompleted tasks!</h3>
+            </section>
+
+            <section id="done" class="taskContainer">
+                <h3>Completed tasks!</h3>
+            </section>
+
+        </section>
+        <script src="main.js"></script>
+    </main>
+
+</body>
+
+</html>
