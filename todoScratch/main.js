@@ -26,17 +26,30 @@ document.querySelector('#AddTaskButton').addEventListener('click', (e) => {
     checkBox.type = 'checkbox'
     checkBox.className = 'check-box';
 
+    const removeButton = document.createElement('button');
+    removeButton.className = 'remove-button';
+    removeButton.innerText = 'Remove Task'
+
     checkBox.addEventListener('change', (e) => {
         if (checkBox.checked) {
-            document.querySelector('#done').appendChild(taskDiv)
+            document.querySelector('#done').appendChild(taskDiv);
+
         } else {
-            document.querySelector('#notDone').appendChild(taskDiv)
+            document.querySelector('#notDone').appendChild(taskDiv);
+
         }
 
     })
-    taskDiv.appendChild(taskText);
-    taskDiv.appendChild(checkBox)
 
+
+
+    taskDiv.appendChild(taskText);
+    taskDiv.appendChild(checkBox);
+    taskDiv.appendChild(removeButton);
+    removeButton.addEventListener('click', (e) => {
+        const parent = taskDiv.parentElement;
+        parent.removeChild(taskDiv);
+    })
     document.querySelector('#notDone').appendChild(taskDiv);
     textInput.value = '';
     dateInput.value = '';
