@@ -1,4 +1,4 @@
-.card {
+/* .card {
   border: 1px solid rgb(124, 124, 124);
   border-radius: 10px;
   box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.106);
@@ -27,3 +27,12 @@
   font-family: Arial, sans-serif;
   color: hsla(0, 0%, 0%, 0.523)
 }
+
+.card .card-button {
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+} */
