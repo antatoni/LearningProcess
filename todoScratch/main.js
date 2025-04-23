@@ -43,6 +43,7 @@ document.querySelector('#AddTaskButton').addEventListener('click', (e) => {
 
 
 
+
     taskDiv.appendChild(taskText);
     taskDiv.appendChild(checkBox);
     taskDiv.appendChild(removeButton);
