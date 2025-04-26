@@ -1,33 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import CompA from './components/CompA'
+import CompB from './components/CompB'
+import CompC from './components/CompC'
+import CompD from './components/CompD'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  //useContect() = React Hook that allows you to share values
+  //               between multiple levels of components 
+  //               without passing props through each level !
+
+  //Proveider COMPONENT
+  //1.import {createContext} from 'react'
+  //2.export const MyContext = createContext();
+  //3.<MyContext.Provider value={value}>
+  //    <Child />
+  //   </MyContext.Proveider>
+
+  //using context eliminates the need for prop drilling ! 
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CompA></CompA>
     </>
   )
 }
